@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Issue</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="p-4">
+
+    <h1>Edit Issue</h1>
+    <form onsubmit="updateIssue(); return false;">
+
+        <div class="mb-3">
+            <label>Summary</label>
+            <input type="text" id="summary" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label>Status</label>
+            <select id="status" class="form-control">
+                <option value="open">Open</option>
+                <option value="overdue">Overdue</option>
+                <option value="resolved">Resolved</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+             <label>Priority</label>
+            <select id="priority" class="form-control">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+        </div>  
+
+        <div class="mb-3">
+            <label>Resolution Summary</label>
+            <textarea id="resolution" class="form-control"></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label>Resolution Date</label>
+            <input type="date" id="resolvedDate" class="form-control">
+        </div>
+        <button class="btn btn-primary">Save Changes</button>
+    </form>
+    <script src="apps.js"></script>
+    <script src="view.js"></script>
+    <script>
+        loadEditForm();
+    </script>
+</body>
+</html>
