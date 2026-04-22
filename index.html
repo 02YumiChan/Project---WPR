@@ -17,6 +17,61 @@
         <button type="submit">Add Person</button>
 
     </form>
+  
+
+    <h2>Create Issue</h2>
+    <form id = "ticketForm">
+    <label> Summary
+        <input type = "text" id = "summary" required/>
+    </label>
+    <label> Description
+        <textarea id = "description" required></textarea>
+    </label>
+    <label> Reporter
+        <select id = "reporter"></select>
+    </label>
+    <label> Entry Date
+        <input type = "date" id = "entryDate" required/>
+    </label>
+    <label> Target Resolution Date
+        <input type = "date" id = "targetDate" required/>
+    </label>
+    <label> Actual Resolution Date
+        <input type = "date" id = "actualDate" required/>
+    </label>
+    <label> Project
+        <select id = "project"></select>
+    </label>
+    <label> Assignment
+        <select id = "assignment">
+            <option value = ""></option>
+        </select>
+    </label>
+     <label> Status
+        <select id = "status">
+            <option value = "open">Open</option>
+            <option value = "resolved">Resolved</option>
+            <option value = "overdue">Overdue</option>
+        </select>
+    </label>
+    <label> Priority
+        <select id = "priority">
+            <option value = "low">low</option>
+            <option value = "medium">Medium</option>
+            <option value = "high">High</option>
+        </select>
+    </label>
+    <label> Resolution Summary
+        <textarea id = "Resolution Summary"></textarea>
+    </label>
+
+    <div class = "flex">
+        <button type = "submit">Create Issue Ticket</button>
+        <buttton type = "button" id = "clear">Clear All</buttton>
+    </div>
+    </form>
+    <div class = "panel">
+    
     <script src="data.js"></script>
     <script src="app.js"></script>
     
